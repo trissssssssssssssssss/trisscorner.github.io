@@ -1,0 +1,42 @@
+body {
+  background-color: #f8f8f8;
+  font-family: "Helvetica Neue", sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  font-size: 2.5em;
+  margin-top: 40px;
+  color: #555;
+}
+
+.subtitle {
+  font-size: 1em;
+  color: #777;
+  margin-bottom: 40px;
+}
+
+.bookshelf {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.book-row {
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
+}
+
+.book-row img {
+  height: 300px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.book-row img:hover {
+  transform: translateY(-10px) rotate(-2deg);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}

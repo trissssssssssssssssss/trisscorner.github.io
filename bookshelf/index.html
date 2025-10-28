@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Virtual Bookshelf</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1 class="title">Photo Gallery</h1>
+  <p class="subtitle">Choose a book to open an album</p>
+
+  <div class="bookshelf">
+    <div class="book-row">
+      <img src="images/book_0.png" alt="Book 0" onclick="openBook(0)">
+      <img src="images/book_1.png" alt="Book 1" onclick="openBook(1)">
+      <img src="images/book_2.png" alt="Book 2" onclick="openBook(2)">
+      <img src="images/book_3.png" alt="Book 3" onclick="openBook(3)">
+      <img src="images/book_4.png" alt="Book 4" onclick="openBook(4)">
+      <img src="images/book_5.png" alt="Book 5" onclick="openBook(5)">
+      <img src="images/book_6.png" alt="Book 6" onclick="openBook(6)">
+      <img src="images/book_7.png" alt="Book 7" onclick="openBook(7)">
+      <img src="images/book_8.png" alt="Book 8" onclick="openBook(8)">
+      <img src="images/book_9.png" alt="Book 9" onclick="openBook(9)">
+    </div>
+  </div>
+
+  <script>
+    function openBook(index) {
+      // Example: redirect to a new HTML page for each book
+      const links = [
+        "page0.html",
+        "page1.html",
+        "page2.html",
+        "page3.html",
+        "page4.html",
+        "page5.html",
+        "page6.html",
+        "page7.html",
+        "page8.html",
+        "page9.html"
+      ];
+      window.location.href = links[index];
+    }
+  </script>
+</body>
+</html>
