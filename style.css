@@ -18,25 +18,28 @@ body {
   margin-bottom: 40px;
 }
 
-.bookshelf {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
+.bookshelf-container {
+  position: relative;
+  display: inline-block;
 }
 
-.book-row {
-  display: flex;
-  gap: 10px;
-  align-items: flex-end;
+.bookshelf-image {
+  width: 90%;
+  max-width: 1000px;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
-.book-row img {
-  height: 300px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+.book-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0);
   cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 
-.book-row img:hover {
-  transform: translateY(-10px) rotate(-2deg);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+.book-link:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* faint glow when hovering */
 }
