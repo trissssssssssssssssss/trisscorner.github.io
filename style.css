@@ -25,11 +25,9 @@ body {
 }
 
 .bookshelf-image {
-  width: 90%;
-  max-width: 1000px;
+  width: 90%
+  max-width: 1500px;
   height: auto;
-  border-radius: 0; /* Removes round corners */
-  box-shadow: none; /* Removes the ugly rectangle shadow */
   display: block;
 }
 
