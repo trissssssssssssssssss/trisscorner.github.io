@@ -21,14 +21,16 @@ body {
 .bookshelf-container {
   position: relative;
   display: inline-block;
+  margin-top: 20px;
 }
 
 .bookshelf-image {
   width: 90%;
   max-width: 1000px;
   height: auto;
-  border-radius: 4px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 0; /* Removes round corners */
+  box-shadow: none; /* Removes the ugly rectangle shadow */
+  display: block;
 }
 
 .book-link {
